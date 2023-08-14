@@ -2,20 +2,49 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Nissan Brand';
+    src: url('~/assets/fonts/NissanBrand-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nissan Brand';
+    src: url('~/assets/fonts/NissanBrand-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nissan Brand';
+    src: url('~/assets/fonts/NissanBrand-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
 
     /**
-    UI STYLES (you can add rules of your design kit)
+    UI STYLES
      */
     --ui-unit: 4px;
     --ui-col: 40px;
-    --ui-accent-color: #28b20d;
-    --ui-secondary-color: #109ed5;
+    --ui-accent-color: #0abab5;
+    --ui-secondary-color: #c31631;
     --ui-white-color: #fff;
     --ui-black-color: #000;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Nissan Brand', sans-serif;
     color: var(--ui-black-color);
+}
+
+.container {
+    width: calc(var(--ui-col) * 30);
+    margin: 0 auto;
 }

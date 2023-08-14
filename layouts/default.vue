@@ -1,12 +1,8 @@
 <template>
     <div :class="$style.DefaultLayout">
-        <TheHeader :class="$style.header" />
-
         <div :class="$style.container">
             <slot />
         </div>
-
-        <TheFooter :class="$style.footer" />
     </div>
 </template>
 
@@ -17,11 +13,7 @@
     width: 100%;
     height: 100%;
     min-height: 100vh;
-}
-
-.header,
-.footer {
-    flex-shrink: 0;
+    background-color: var(--ui-white-color);
 }
 
 .container {

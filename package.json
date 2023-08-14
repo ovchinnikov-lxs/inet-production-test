@@ -21,7 +21,7 @@
     },
     "devDependencies": {
         "@nuxt/devtools": "latest",
-         "@nuxtjs/eslint-config-typescript": "^12.0.0",
+        "@nuxtjs/eslint-config-typescript": "^12.0.0",
         "@types/node": "^18.16.19",
         "eslint": "^8.34.0",
         "husky": "^8.0.3",
