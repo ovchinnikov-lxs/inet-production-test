@@ -90,6 +90,10 @@ function addItem() {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: calc(var(--ui-unit) * 6);
     grid-row-gap: calc(var(--ui-unit) * 6);
+
+    @include respond-to(tablet) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .button {

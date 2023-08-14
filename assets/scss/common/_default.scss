@@ -47,4 +47,8 @@ body {
 .container {
     width: calc(var(--ui-col) * 30);
     margin: 0 auto;
+
+    @include respond-to(tablet) {
+        width: calc(100% - var(--ui-unit) * 8);
+    }
 }

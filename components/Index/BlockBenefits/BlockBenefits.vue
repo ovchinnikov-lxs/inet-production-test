@@ -62,6 +62,10 @@ const options = {
 .wrapper {
     width: 100%;
     height: 100%;
+
+    @include respond-to(tablet) {
+        overflow: hidden;
+    }
 }
 
 .container {
@@ -90,8 +94,18 @@ const options = {
 .slider {
     width: 100%;
 
+    @include respond-to(tablet) {
+        :global(.UiSwiper__container) {
+            overflow: visible;
+        }
+    }
+
     :global(.swiper-slide) {
         width: calc(var(--ui-unit) * 70.5);
+
+        @include respond-to(tablet) {
+            width: 100%;
+        }
 
         &:not(:last-child) {
             margin-right: calc(var(--ui-unit) * 6);

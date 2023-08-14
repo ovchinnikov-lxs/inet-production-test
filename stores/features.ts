@@ -60,9 +60,9 @@ export const useFeatures = defineStore('features', {
         addItem(item: IFeaturesItem) {
             const newArr = [...this.list[item.model_name]];
             newArr.splice(item.sorting, 0, item);
-            this.list[item.model_name] = newArr.map((i, index) => ({
+            this.list[item.model_name] = newArr.map((i, sorting) => ({
                 ...i,
-                sorting: index,
+                sorting,
             }));
         },
     },

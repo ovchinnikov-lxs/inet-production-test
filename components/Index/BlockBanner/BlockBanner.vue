@@ -13,11 +13,13 @@ import { UiImage } from '@ovchinnikov-lxs-frontend/ui-kit';
                     :class="$style.mountains"
                 />
 
-                <UiIcon
-                    name="banner/logo"
-                    size="custom"
-                    :class="$style.logo"
-                />
+                <div :class="$style.logoWrapper">
+                    <UiIcon
+                        name="banner/logo"
+                        size="custom"
+                        :class="$style.logo"
+                    />
+                </div>
 
                 <div class="container" :class="$style.container">
                     <UiButton
@@ -70,13 +72,26 @@ import { UiImage } from '@ovchinnikov-lxs-frontend/ui-kit';
     user-select: none;
 }
 
-.logo {
+.logoWrapper {
+    @include aspect-ratio(1039, 191);
+
     position: absolute;
     top: 50%;
     left: 50%;
     width: calc(var(--ui-col) * 26);
-    height: calc(var(--ui-unit) * 48);
     transform: translate3d(-50%, -50%, 0);
+
+    @include respond-to(tablet) {
+        width: 86%;
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .container {
@@ -85,6 +100,10 @@ import { UiImage } from '@ovchinnikov-lxs-frontend/ui-kit';
     display: flex;
     align-items: flex-end;
     column-gap: calc(var(--ui-unit) * 44);
+
+    @include respond-to(tablet) {
+        column-gap: calc(var(--ui-unit) * 4);
+    }
 }
 
 .button {
@@ -94,8 +113,13 @@ import { UiImage } from '@ovchinnikov-lxs-frontend/ui-kit';
 .carWrapper {
     @include aspect-ratio(742, 385);
 
-    width: calc(var(--ui-unit) * 186);
+    width: 56%;
     transform: translate3d(0, calc(var(--ui-unit) * 35), 0);
+
+    @include respond-to(tablet) {
+        width: 50%;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 .car {
