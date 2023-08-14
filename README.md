@@ -1,9 +1,10 @@
-# Nuxt3-Template
+# inet-production-test
 
 ## Setup
 
 
-Click to "Use this template" in github
+Requirements:  
+node v18.16.1 and higher
 
 ```bash
 # npm
