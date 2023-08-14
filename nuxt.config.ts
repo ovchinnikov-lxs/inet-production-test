@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     app: {
         baseURL: '/inet-production-test/',
         head: {
+            title: 'Test task for Inet Production',
             charset: 'utf-16',
             viewport: 'width=device-width, initial-scale=1',
             meta: [
