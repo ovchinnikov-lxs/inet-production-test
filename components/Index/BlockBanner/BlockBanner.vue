@@ -8,7 +8,7 @@ import { UiImage } from '@ovchinnikov-lxs-frontend/ui-kit';
         <div :class="$style.wrapper">
             <main :class="$style.main">
                 <UiImage
-                    origin="/banner/Mountains.png"
+                    origin="/inet-production-test/banner/Mountains.png"
                     object-fit="contain"
                     :class="$style.mountains"
                 />
@@ -28,7 +28,7 @@ import { UiImage } from '@ovchinnikov-lxs-frontend/ui-kit';
                     </UiButton>
 
                     <div :class="$style.carWrapper">
-                        <UiImage origin="/banner/Car.png" :class="$style.car"/>
+                        <UiImage origin="/inet-production-test/banner/Car.png" :class="$style.car"/>
                     </div>
                 </div>
             </main>

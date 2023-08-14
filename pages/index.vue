@@ -3,6 +3,7 @@
         <div :class="$style.wrapper">
             <IndexBlockBanner/>
             <IndexBlockBenefits/>
+            <IndexBlockFeatures/>
         </div>
     </div>
 </template>

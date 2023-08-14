@@ -20,7 +20,12 @@ export default defineNuxtConfig({
 
     modules: [
         '@nuxtjs/svg-sprite',
+        '@pinia/nuxt',
     ],
+
+    pinia: {
+        autoImports: ['defineStore', 'acceptHMRUpdate'],
+    },
 
     router: {
         options: {
